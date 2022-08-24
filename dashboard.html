@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	  	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  <script type="text/javascript" src="js/popper.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+     
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+	<title></title>
+</head>
+<body>
+<header class="header1">
+	<div class="col-sm-2 head1">
+		<img class="logo1" src="img/logo1.png">
+		<!-- <p class="head1a"><i class="fa-duotone fa-chart-pie-simple"></i>Dashboard</p>
+		<p class="head1b"><i class="fa-duotone fa-gear"></i>Setup School</p>
+		<p class="head1c"><i class="fa-duotone fa-calendar-check"></i>Calender</p> -->
+		<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'firstTab')" id="defaultOpen"><i class="fa-duotone fa-chart-pie-simple"></i>Dashboard</button>
+  <button class="tablinks" onclick="openTab(event, 'secondTab')"><i class="fa-duotone fa-gear"></i>Setup School</button>
+  <button class="tablinks" onclick="openTab(event, 'thirdTab')"><i class="fa-duotone fa-calendar-check"></i>Calender</button>
+</div>
+<hr style=" width: 70%; color: grey; margin-left: 18px;">
+<p class="abc11">STUDENTS</p>
+<p class="head1a"><img src="img/e1.png">Requests</p>
+<p class="head1a"><img src="img/e2.png">Admissions</p>
+<p class="head1a"><img src="img/e3.png">Fees </p>
+<p class="head1a"><img src="img/e4.png">Notices</p>
+<p class="head1a"><img src="img/e5.png">Time table</p>
+<p class="head1a"><img src="img/e6.png">Attendance</p>
+<p class="head1a"><img src="img/e7.png">Examinations</p>
+<p class="head1a"><img src="img/e8.png">Report Card</p>
+<hr style=" width: 70%; color: grey; margin-left: 18px; margin-top: 40px;">
+<p class="abc11">Teachers</p>
+<p class="head1a"><img src="img/e1.png">Requests</p>
+<p class="head1a"><img src="img/e2.png">Admissions</p>
+<p class="head1a"><img src="img/e3.png">Fees </p>
+<p class="head1a"><img src="img/e4.png">Notices</p>
+<p class="head1a"><img src="img/e5.png">Time table</p>
+<p class="head1a"><img src="img/e6.png">Attendance</p>
+
+
+	</div>
+	<div class="col-sm-10 head2">
+		<div class="modal11">
+			<!-- Button trigger modal -->
+<button type="button" class="btn btn1122" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <img src="img/p1.png">How to use the app
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+       <p class="mdl1"><img src="img/p2.png"><span><img src="img/logo1.png"></span></p>
+       <p class="mdl2">Welcome to your Dashboard</p>
+       <p class="mdl3">You will need to setup some basic things before hand.</p>
+       <div class="mdl1a">
+       		<div class="col-sm-6">
+ 			<div class="mdlbx1">
+ 				<p class="mdl4"><i class="fa-solid fa-user-check"></i>Add Teachers<span>STEP 1</span></p>
+       			<p class="mdl5">Add techers to the database </p>
+ 			</div>
+       </div>
+              <div class="col-sm-6">
+ 			<div class="mdlbx2">
+ 				<p class="mdl44"><i class="fa-solid fa-book"></i>Add Teachers<span>STEP 1</span></p>
+       			<p class="mdl5">Add techers to the database </p>
+ 			</div>
+       </div>
+
+       </div>
+       <div class="mdl1b">
+       		<div class="col-sm-6">
+ 			<div class="mdlbx3">
+ 				<p class="mdl45"><i class="fa-duotone fa-gear"></i></i>Add Teachers<span>STEP 1</span></p>
+       			<p class="mdl5">Add techers to the database </p>
+ 			</div>
+       </div>
+              <div class="col-sm-6">
+ 			<div class="mdlbx4">
+ 				<p class="mdl46"><i class="fa-solid fa-user-check"></i>Add Teachers<span>STEP 1</span></p>
+       			<p class="mdl5">Add techers to the database </p>
+ 			</div>
+       </div>
+
+       </div>
+
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+	</div>
+
+		</div>
+
+	<div id="firstTab" class="tabcontent">
+		<h3>Dashboard</h3>
+		<div class="header1a">
+	<div class="col-sm-4 hd1">
+				<img class="aft" src="img/aft.png">
+		<div class="box11">
+			<p class="box11a">40,10,200<span>+19.4%</span></p>
+			<p class="box11b">Total earnings</p>
+		</div>
+	</div>
+	<div class="col-sm-4 hd1">
+			<img class="aft" src="img/aft.png">
+		<div class="box12">
+			<p class="box12a">40,10,200<span>+19.4%</span></p>
+			<p class="box11b">Total earnings</p>
+		</div>
+	</div>
+	<div class="col-sm-4 hd1">
+			<img class="aft" src="img/aft.png">
+		<div class="box13">
+			<p class="box13a">40,10,200<span>+19.4%</span></p>
+			<p class="box11b">Total earnings</p>
+		</div>
+	</div>
+</div>
+
+  	<div class="col-sm-6 graph1">
+  		  <div id="chart_div" style="width: 800px; height: 500px;"></div>
+  	</div>
+  	<div class="col-sm-6 cal1">
+  		<div class="card">
+	<div class="calendar-bar">
+		<button class="prev soft-btn"><i class="fas fa-chevron-left"></i></button>
+		<div class="current-month"></div>
+		<button class="next soft-btn"><i class="fas fa-chevron-right"></i></button>
+	</div>
+	<div class="calendar">
+		<div class="weekdays-name">
+			<div class="days-name">Sa</div>
+			<div class="days-name">Su</div>
+			<div class="days-name">Mo</div>
+			<div class="days-name">Tu</div>
+			<div class="days-name">We</div>
+			<div class="days-name">Th</div>
+			<div class="days-name">Fr</div>
+		</div>
+		<div class="calendar-days"></div>
+		<div class="calbox"><p class="cal1a">Meeting with physics teacher</p><p class="cal1b">22 Oct, 2020 | 8:30 PM</p></div>
+	</div>
+	<div class="goto-buttons">
+		<button type="button" class="btn prev-year">Prev Year</button>
+		<button type="button" class="btn today">Today</button>
+		<button type="button" class="btn next-year">Next Year</button>
+	</div>
+</div>
+  	</div>
+  	<div class="aabb">
+  		<div class="col-sm-3">
+  			 <div id="donutchart" style="width: 900px; height: 500px;"></div>
+  		</div>
+  		<div class="col-sm-4">
+  			<div class="cardbx">
+  				<p class="cardbx1">Recent admissions</p>
+  				
+  				<div class="xyz">
+  					<p class="cardbx2"><img src="img/c1.png"></p>
+  					<p class="cardbx3">Priyam Kumar</p>
+  					<p class="cardbx4">Class X </p>
+  				</div>
+  				
+  				<div class="xyz">
+  					<p class="cardbx2"><img src="img/c2.png"></p>
+  					<p class="cardbx3">Ashley Carlos</p>
+  					<p class="cardbx4">Class XI </p>
+  				</div>
+  				
+  				<div class="xyz">
+  					<p class="cardbx2"><img src="img/c3.png"></p>
+  					<p class="cardbx3">Ravikant Iyer</p>
+  					<p class="cardbx4">Class XII </p>
+  				</div>
+
+  				<div class="xyz">
+  					<p class="cardbx2"><img src="img/c4.png"></p>
+  					<p class="cardbx3">Carlos Warner</p>
+  					<p class="cardbx4">Class XII </p>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="col-sm-5">
+  			<div class="pack">
+  				<p class="pack1">Notices<span>see all</span></p>
+  				<div class="pack22">
+  					<p class="pack2"><img src="img/pk1.png"></p>
+  					<p class="pack3">Pandemic rules and guidelines..</p>
+  					<p class="pack4">20 Oct, 2020 | 8:30 PM</p>
+  				</div>
+  				<div class="pack22">
+  					<p class="pack2"><img src="img/pk1.png"></p>
+  					<p class="pack3">Pandemic rules and guidelines..</p>
+  					<p class="pack4">20 Oct, 2020 | 8:30 PM</p>
+  				</div>
+  				<div class="pack22">
+  					<p class="pack2"><img src="img/pk1.png"></p>
+  					<p class="pack3">Pandemic rules and guidelines..</p>
+  					<p class="pack4">20 Oct, 2020 | 8:30 PM</p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+</div>
+
+<div id="secondTab" class="tabcontent">
+ <h3>Setup School</h3>
+		<div class="header1a">
+	<div class="col-sm-4 hd1">
+		<div class="box11">
+			<p class="box11a">40,10,200<span>+19.4%</span></p>
+			<p class="box11b">Total earnings</p>
+		</div>
+	</div>
+	<div class="col-sm-4 hd1">
+		<div class="box12">
+			<p class="box12a">40,10,200<span>+19.4%</span></p>
+			<p class="box11b">Total earnings</p>
+		</div>
+	</div>
+	<div class="col-sm-4 hd1">
+		<div class="box13">
+			<p class="box13a">40,10,200<span>+19.4%</span></p>
+			<p class="box11b">Total earnings</p>
+		</div>
+	</div>
+</div>
+
+  	<div class="col-sm-6 graph1">
+  		  <div id="chart_div11" style="width: 800px; height: 500px;"></div>
+  	</div>
+  	<div class="col-sm-6 cal1">
+  		<div class="card">
+	<div class="calendar-bar">
+		<button class="prev soft-btn"><i class="fas fa-chevron-left"></i></button>
+		<div class="current-month"></div>
+		<button class="next soft-btn"><i class="fas fa-chevron-right"></i></button>
+	</div>
+	<div class="calendar">
+		<div class="weekdays-name">
+			<div class="days-name">Sa</div>
+			<div class="days-name">Su</div>
+			<div class="days-name">Mo</div>
+			<div class="days-name">Tu</div>
+			<div class="days-name">We</div>
+			<div class="days-name">Th</div>
+			<div class="days-name">Fr</div>
+		</div>
+		<div class="calendar-days"></div>
+		<div class="calbox"><p class="cal1a">Meeting with physics teacher</p><p class="cal1b">22 Oct, 2020 | 8:30 PM</p></div>
+	</div>
+	<div class="goto-buttons">
+		<button type="button" class="btn prev-year">Prev Year</button>
+		<button type="button" class="btn today">Today</button>
+		<button type="button" class="btn next-year">Next Year</button>
+	</div>
+</div>
+  	</div>
+  	<div class="aabb">
+  		<div class="col-sm-3">
+  			 <div id="donutchart" style="width: 900px; height: 500px;"></div>
+  		</div>
+  		<div class="col-sm-4">
+  			<div class="cardbx">
+  				<p class="cardbx1">Recent admissions</p>
+  				
+  				<div class="xyz">
+  					<p class="cardbx2"><img src="img/c1.png"></p>
+  					<p class="cardbx3">Priyam Kumar</p>
+  					<p class="cardbx4">Class X </p>
+  				</div>
+  				
+  				<div class="xyz">
+  					<p class="cardbx2"><img src="img/c2.png"></p>
+  					<p class="cardbx3">Ashley Carlos</p>
+  					<p class="cardbx4">Class XI </p>
+  				</div>
+  				
+  				<div class="xyz">
+  					<p class="cardbx2"><img src="img/c3.png"></p>
+  					<p class="cardbx3">Ravikant Iyer</p>
+  					<p class="cardbx4">Class XII </p>
+  				</div>
+
+  				<div class="xyz">
+  					<p class="cardbx2"><img src="img/c4.png"></p>
+  					<p class="cardbx3">Carlos Warner</p>
+  					<p class="cardbx4">Class XII </p>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="col-sm-5">
+  			<div class="pack">
+  				<p class="pack1">Notices<span>see all</span></p>
+  				<div class="pack22">
+  					<p class="pack2"><img src="img/pk1.png"></p>
+  					<p class="pack3">Pandemic rules and guidelines..</p>
+  					<p class="pack4">20 Oct, 2020 | 8:30 PM</p>
+  				</div>
+  				<div class="pack22">
+  					<p class="pack2"><img src="img/pk1.png"></p>
+  					<p class="pack3">Pandemic rules and guidelines..</p>
+  					<p class="pack4">20 Oct, 2020 | 8:30 PM</p>
+  				</div>
+  				<div class="pack22">
+  					<p class="pack2"><img src="img/pk1.png"></p>
+  					<p class="pack3">Pandemic rules and guidelines..</p>
+  					<p class="pack4">20 Oct, 2020 | 8:30 PM</p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+</div>
+
+<div id="thirdTab" class="tabcontent">
+  <h3>Calender</h3>
+		<div class="header1a">
+	<div class="col-sm-4 hd1">
+		<div class="box11">
+			<p class="box11a">40,10,200<span>+19.4%</span></p>
+			<p class="box11b">Total earnings</p>
+		</div>
+	</div>
+	<div class="col-sm-4 hd1">
+		<div class="box12">
+			<p class="box12a">40,10,200<span>+19.4%</span></p>
+			<p class="box11b">Total earnings</p>
+		</div>
+	</div>
+	<div class="col-sm-4 hd1">
+		<div class="box13">
+			<p class="box13a">40,10,200<span>+19.4%</span></p>
+			<p class="box11b">Total earnings</p>
+		</div>
+	</div>
+</div>
+
+  	<div class="col-sm-6 graph1">
+  		  <div id="chart_div22" style="width: 800px; height: 500px;"></div>
+  	</div>
+  	<div class="col-sm-6 cal1">
+  		<div class="card">
+	<div class="calendar-bar">
+		<button class="prev soft-btn"><i class="fas fa-chevron-left"></i></button>
+		<div class="current-month"></div>
+		<button class="next soft-btn"><i class="fas fa-chevron-right"></i></button>
+	</div>
+	<div class="calendar">
+		<div class="weekdays-name">
+			<div class="days-name">Sa</div>
+			<div class="days-name">Su</div>
+			<div class="days-name">Mo</div>
+			<div class="days-name">Tu</div>
+			<div class="days-name">We</div>
+			<div class="days-name">Th</div>
+			<div class="days-name">Fr</div>
+		</div>
+		<div class="calendar-days"></div>
+		<div class="calbox"><p class="cal1a">Meeting with physics teacher</p><p class="cal1b">22 Oct, 2020 | 8:30 PM</p></div>
+	</div>
+	<div class="goto-buttons">
+		<button type="button" class="btn prev-year">Prev Year</button>
+		<button type="button" class="btn today">Today</button>
+		<button type="button" class="btn next-year">Next Year</button>
+	</div>
+</div>
+  	</div>
+  	<div class="aabb">
+  		<div class="col-sm-3">
+  			 <div id="donutchart" style="width: 900px; height: 500px;"></div>
+  		</div>
+  		<div class="col-sm-4">
+  			<div class="cardbx">
+  				<p class="cardbx1">Recent admissions</p>
+  				
+  				<div class="xyz">
+  					<p class="cardbx2"><img src="img/c1.png"></p>
+  					<p class="cardbx3">Priyam Kumar</p>
+  					<p class="cardbx4">Class X </p>
+  				</div>
+  				
+  				<div class="xyz">
+  					<p class="cardbx2"><img src="img/c2.png"></p>
+  					<p class="cardbx3">Ashley Carlos</p>
+  					<p class="cardbx4">Class XI </p>
+  				</div>
+  				
+  				<div class="xyz">
+  					<p class="cardbx2"><img src="img/c3.png"></p>
+  					<p class="cardbx3">Ravikant Iyer</p>
+  					<p class="cardbx4">Class XII </p>
+  				</div>
+
+  				<div class="xyz">
+  					<p class="cardbx2"><img src="img/c4.png"></p>
+  					<p class="cardbx3">Carlos Warner</p>
+  					<p class="cardbx4">Class XII </p>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="col-sm-5">
+  			<div class="pack">
+  				<p class="pack1">Notices<span>see all</span></p>
+  				<div class="pack22">
+  					<p class="pack2"><img src="img/pk1.png"></p>
+  					<p class="pack3">Pandemic rules and guidelines..</p>
+  					<p class="pack4">20 Oct, 2020 | 8:30 PM</p>
+  				</div>
+  				<div class="pack22">
+  					<p class="pack2"><img src="img/pk1.png"></p>
+  					<p class="pack3">Pandemic rules and guidelines..</p>
+  					<p class="pack4">20 Oct, 2020 | 8:30 PM</p>
+  				</div>
+  				<div class="pack22">
+  					<p class="pack2"><img src="img/pk1.png"></p>
+  					<p class="pack3">Pandemic rules and guidelines..</p>
+  					<p class="pack4">20 Oct, 2020 | 8:30 PM</p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+</div>
+
+</header>
+
+
+<script>
+	function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+<script>
+	google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('timeofday', 'Time of Day');
+      data.addColumn('number', 'Views');
+
+      data.addRows([
+        [{v: [9, 0, 0], f: '9'}, 3],
+        [{v: [10, 0, 0], f: '10'}, 14],
+        [{v: [11, 0, 0], f:'11'}, 23],
+        [{v: [12, 0, 0], f: '12'}, 46],
+        [{v: [13, 0, 0], f: '1'}, 78],
+        [{v: [14, 0, 0], f: '2'}, 90],
+        [{v: [15, 0, 0], f: '3'}, 180],
+        [{v: [16, 0, 0], f: '4'}, 200],
+        [{v: [17, 0, 0], f: '5'}, 233],
+        [{v: [18, 0, 0], f: '6'}, 433],
+      ]);
+
+      var options = {
+        title: 'Views',
+        hAxis: {
+          title: 'Date',
+          format: 'mm/dd/y',
+          viewWindow: {
+            min: [7, 30, 2018],
+            max: [18, 30, 2018]
+          }
+        },
+        vAxis: {
+          title: 'Views'
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+</script>
+<script>
+	google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('timeofday', 'Time of Day');
+      data.addColumn('number', 'Views');
+
+      data.addRows([
+        [{v: [9, 0, 0], f: '9'}, 3],
+        [{v: [10, 0, 0], f: '10'}, 14],
+        [{v: [11, 0, 0], f:'11'}, 23],
+        [{v: [12, 0, 0], f: '12'}, 46],
+        [{v: [13, 0, 0], f: '1'}, 78],
+        [{v: [14, 0, 0], f: '2'}, 90],
+        [{v: [15, 0, 0], f: '3'}, 180],
+        [{v: [16, 0, 0], f: '4'}, 200],
+        [{v: [17, 0, 0], f: '5'}, 233],
+        [{v: [18, 0, 0], f: '6'}, 433],
+      ]);
+
+      var options = {
+        title: 'Views',
+        hAxis: {
+          title: 'Date',
+          format: 'mm/dd/y',
+          viewWindow: {
+            min: [7, 30, 2018],
+            max: [18, 30, 2018]
+          }
+        },
+        vAxis: {
+          title: 'Views'
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div11'));
+
+      chart.draw(data, options);
+    }
+</script>
+<script>
+	google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('timeofday', 'Time of Day');
+      data.addColumn('number', 'Views');
+
+      data.addRows([
+        [{v: [9, 0, 0], f: '9'}, 3],
+        [{v: [10, 0, 0], f: '10'}, 14],
+        [{v: [11, 0, 0], f:'11'}, 23],
+        [{v: [12, 0, 0], f: '12'}, 46],
+        [{v: [13, 0, 0], f: '1'}, 78],
+        [{v: [14, 0, 0], f: '2'}, 90],
+        [{v: [15, 0, 0], f: '3'}, 180],
+        [{v: [16, 0, 0], f: '4'}, 200],
+        [{v: [17, 0, 0], f: '5'}, 233],
+        [{v: [18, 0, 0], f: '6'}, 433],
+      ]);
+
+      var options = {
+        title: 'Views',
+        hAxis: {
+          title: 'Date',
+          format: 'mm/dd/y',
+          viewWindow: {
+            min: [7, 30, 2018],
+            max: [18, 30, 2018]
+          }
+        },
+        vAxis: {
+          title: 'Views'
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div22'));
+
+      chart.draw(data, options);
+    }
+</script>
+
+<script>
+	var currentMonth = document.querySelector(".current-month");
+var calendarDays = document.querySelector(".calendar-days");
+var today = new Date();
+var date = new Date();
+currentMonth.textContent = date.toLocaleDateString("en-US", {
+	month: "long",
+	year: "numeric"
+});
+today.setHours(0, 0, 0, 0);
+renderCalendar();
+function renderCalendar() {
+	const prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
+	const totalMonthDay = new Date(
+		date.getFullYear(),
+		date.getMonth() + 1,
+		0
+	).getDate();
+	const startWeekDay = new Date(date.getFullYear(), date.getMonth(), 1).getDay();
+	calendarDays.innerHTML = "";
+	let totalCalendarDay = 6 * 7;
+	for (let i = 0; i < totalCalendarDay; i++) {
+		let day = i - startWeekDay;
+		if (i <= startWeekDay) {
+			// adding previous month days
+			calendarDays.innerHTML += `<div class='padding-day'>${
+				prevLastDay - i
+			}</div>`;
+		} else if (i <= startWeekDay + totalMonthDay) {
+			// adding this month days
+			date.setDate(day);
+			date.setHours(0, 0, 0, 0);
+			let dayClass =
+				date.getTime() === today.getTime() ? "current-day" : "month-day";
+			calendarDays.innerHTML += `<div class='${dayClass}'>${day}</div>`;
+		} else {
+			// adding next month days
+			calendarDays.innerHTML += `<div class='padding-day'>${
+				day - totalMonthDay
+			}</div>`;
+		}
+	}
+}
+document.querySelectorAll(".soft-btn").forEach(function (element) {
+	element.addEventListener("click", function () {
+		date = new Date(currentMonth.textContent);
+		date.setMonth(
+			date.getMonth() + (element.classList.contains("prev") ? -1 : 1)
+		);
+		currentMonth.textContent = date.toLocaleDateString("en-US", {
+			month: "long",
+			year: "numeric"
+		});
+		renderCalendar();
+	});
+});
+document.querySelectorAll(".btn").forEach(function (element) {
+	element.addEventListener("click", function () {
+		let btnClass = element.classList;
+		date = new Date(currentMonth.textContent);
+		if (btnClass.contains("today")) date = new Date();
+		else if (btnClass.contains("prev-year"))
+			date = new Date(date.getFullYear() - 1, 0, 1);
+		else date = new Date(date.getFullYear() + 1, 0, 1);
+		currentMonth.textContent = date.toLocaleDateString("en-US", {
+			month: "long",
+			year: "numeric"
+		});
+		renderCalendar();
+	});
+});
+
+</script>
+</body>
+</html>
